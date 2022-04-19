@@ -6,7 +6,7 @@ export default function handler(req, res) {
         if(data.status === 'ok') {
         res.status(200).json({ data })
         }
-        res.status(500).json({ error })
+        res.status(500).json({ error : 'Server is down' })
       })
   }
   status()
